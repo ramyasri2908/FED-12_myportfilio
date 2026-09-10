@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+        }
+
+        header h1 {
+            font-size: 44px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 28px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        .container {
+            display: flex;
+            gap: 26px;
+            padding: 40px;
+            min-height: 240px;
+        }
+
+        .box {
+            background-color: white;
+            flex: 1;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h2 {
+            font-size: 23px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .box p {
+            font-size: 21px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 20px;
+        }
+
+        footer a {
+            color: #0000ee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ramya sri ch.</h1>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <div class="box" id="about">
+            <h2>About Me:</h2>
+            <p>
+                Ch. Ramya sri student at  KL<br>
+                University Vaddeswaram
+            </p>
+        </div>
+
+        <div class="box" id="projects">
+            <h2>Projects:</h2>
+            <p>
+                Project 1, Project 2...
+            </p>
+        </div>
+
+        <div class="box" id="skills">
+            <h2>Skills: HTML, CSS, JavaScript...</h2>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        Contact: ramyasrichukkala29@gmail.com |
+        Follow me on
+        <a href="#">LinkedIn</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    gap: 26px;
+    padding: 40px;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Photo Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #1e6f8c;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .gallery {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 250px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 18px;
+            color: white;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        }
+
+        .caption h3 {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background: #1e6f8c;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>✈️ Wanderlust Diaries</h1>
+        <p>Explore the world through my travel memories</p>
+    </header>
+
+    <section class="gallery">
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                 alt="Beach">
+            <div class="caption">
+                <h3>Maldives</h3>
+                <p>Beautiful beaches and peaceful sunsets</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                 alt="Mountains">
+            <div class="caption">
+                <h3>Switzerland</h3>
+                <p>Adventures in the mountains</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"
+                 alt="London">
+            <div class="caption">
+                <h3>London</h3>
+                <p>Exploring the streets of London</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+                 alt="Japan">
+            <div class="caption">
+                <h3>Japan</h3>
+                <p>Culture, temples and cherry blossoms</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+                 alt="India">
+            <div class="caption">
+                <h3>India</h3>
+                <p>Discovering incredible India</p>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+                 alt="Dubai">
+            <div class="caption">
+                <h3>Dubai</h3>
+                <p>City lights and amazing architecture</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Wanderlust Diaries | Travel • Explore • Dream</p>
+    </footer>
+
+</body>
+</html>
